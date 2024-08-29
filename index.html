@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг Курьерских Услуг</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">Логотип</div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#service-request">Оставить заявку</a></li>
+                    <li><a href="#courier-request">Стать курьером</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <a href="tel:+1234567890" class="contact-link">Связаться с нами</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональные курьерские услуги для вашего бизнеса</h1>
+            <p>Быстро, надежно и удобно</p>
+            <a href="#service-request" class="btn primary-btn">Оставить заявку</a>
+            <a href="#courier-request" class="btn secondary-btn">Стать курьером</a>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-aos="fade-up">Наши Услуги</h2>
+            <div class="service-grid">
+                <div class="service-item" data-aos="fade-up">
+                    <div class="icon">🚚</div>
+                    <h3>Доставка товаров</h3>
+                    <p>Быстрая и надежная доставка для вашего бизнеса.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">📦</div>
+                    <h3>Упаковка и сортировка</h3>
+                    <p>Профессиональная упаковка и сортировка товаров.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">✈️</div>
+                    <h3>Международная доставка</h3>
+                    <p>Глобальная доставка с гарантией безопасности.</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon">🏪</div>
+                    <h3>Логистические решения</h3>
+                    <p>Индивидуальные логистические решения для бизнеса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информационный блок -->
+    <section id="information" class="information">
+        <div class="container">
+            <div class="info-content">
+                <div class="info-image" data-aos="fade-right">
+                    <img src="https://via.placeholder.com/500" alt="Информация">
+                </div>
+                <div class="info-text" data-aos="fade-left">
+                    <h2>Почему выбирают нас?</h2>
+                    <p>Мы предоставляем профессиональные услуги, которые помогают вашему бизнесу расти. Наша команда специалистов готова обеспечить максимально быстрые и качественные услуги с индивидуальным подходом к каждому клиенту.</p>
+                    <p>Наша миссия — сделать ваш бизнес более эффективным и успешным. Мы гарантируем надежность, безопасность и оперативность на каждом этапе доставки.</p>
+                    <a href="#services" class="btn tertiary-btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Оставить заявку -->
+    <section id="service-request" class="request">
+        <div class="container">
+            <h2 data-aos="fade-up">Оставить заявку на услуги</h2>
+            <form id="service-form" data-aos="fade-up">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="description">Описание заявки:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                <button type="submit" class="btn primary-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Стать курьером -->
+    <section id="courier-request" class="request">
+        <div class="container">
+            <h2 data-aos="fade-up">Стать курьером</h2>
+            <form id="courier-form" data-aos="fade-up">
+                <label for="name-courier">Имя:</label>
+                <input type="text" id="name-courier" name="name-courier" required>
+                <label for="phone-courier">Телефон:</label>
+                <input type="tel" id="phone-courier" name="phone-courier" required>
+                <label for="email-courier">Электронная почта:</label>
+                <input type="email" id="email-courier" name="email-courier" required>
+                <label for="resume">Краткое резюме:</label>
+                <textarea id="resume" name="resume" rows="4" required></textarea>
+                <button type="submit" class="btn primary-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Курьерские Услуги. Все права защищены.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

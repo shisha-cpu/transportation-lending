@@ -1,0 +1,295 @@
+/* Основные стили */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    float: left;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.contact {
+    float: right;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+/* Баннер */
+.hero {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+    animation: fadeInUp 2s ease forwards;
+}
+
+.primary-btn {
+    background: #28a745;
+}
+
+.primary-btn:hover {
+    background: #218838;
+}
+
+.secondary-btn {
+    background: #dc3545;
+}
+
+.secondary-btn:hover {
+    background: #c82333;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Услуги */
+.services {
+    padding: 80px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    flex: 1 1 calc(50% - 40px);
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Информационный блок */
+.information {
+    padding: 80px 0;
+    background: #007bff;
+    color: #fff;
+}
+
+.info-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.info-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tertiary-btn {
+    background: #ffc107;
+    color: #007bff;
+}
+
+.tertiary-btn:hover {
+    background: #e0a800;
+    color: #fff;
+}
+
+/* Форма */
+.request {
+    padding: 80px 0;
+    background: #f4f4f4;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff;
+    background: #fff;
+}
+
+form button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Футер */
+footer {
+    background: #007bff;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffc107;
+}
