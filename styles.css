@@ -34,6 +34,9 @@ header {
     color: #000;
     text-transform: uppercase;
 }
+.logo img{
+    max-width: 140px;
+}
 
 nav ul {
     list-style: none;
@@ -297,6 +300,9 @@ footer p {
 .info-image {
     display: flex;
     justify-content: center;
+}
+.step-img img{
+    width: 100%;
 }
 /* Адаптивные стили */
 @media (max-width: 1200px) {
