@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
+    color: #000;
     background-color: #fff;
     line-height: 1.6;
 }
@@ -18,20 +18,20 @@ body {
 /* Шапка */
 header {
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f0f0f0;
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     float: left;
     font-weight: bold;
     font-size: 1.8em;
-    color: #007bff;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -49,13 +49,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #333;
 }
 
 .contact {
@@ -64,32 +64,32 @@ nav ul li a:hover {
 
 .contact-link {
     text-decoration: none;
-    color: #007bff;
+    color: #000;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-    color: #0056b3;
+    color: #333;
 }
 
 /* Баннер */
 .hero {
-    background: linear-gradient(135deg, #007bff, #00d4ff);
-    color: #fff;
-    padding: 150px 0;
+    background: #fff;
+    color: #000;
+    padding: 100px 0;
     text-align: center;
     position: relative;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
     animation: fadeInUp 1s ease forwards;
 }
 
 .hero p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 20px 0;
     animation: fadeInUp 1.5s ease forwards;
 }
@@ -98,29 +98,22 @@ nav ul li a:hover {
     display: inline-block;
     padding: 15px 30px;
     margin: 15px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
     font-size: 1.2em;
     transition: background 0.3s ease;
     animation: fadeInUp 2s ease forwards;
-}
-
-.primary-btn {
-    background: #28a745;
+    background: #f0f0f0;
 }
 
 .primary-btn:hover {
-    background: #218838;
-}
-
-.secondary-btn {
-    background: #dc3545;
+    background: #e0e0e0;
 }
 
 .secondary-btn:hover {
-    background: #c82333;
+    background: #e0e0e0;
 }
 
 /* Анимации */
@@ -135,97 +128,101 @@ nav ul li a:hover {
     }
 }
 
-/* Услуги */
-.services {
+/* Карточки с иконками */
+.cards {
     padding: 80px 0;
-    background: #f4f4f4;
+    background: #fff;
     text-align: center;
 }
 
-.service-grid {
+.card-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.service-item {
+.card-item {
     flex: 1 1 calc(50% - 40px);
     margin: 20px;
     padding: 30px;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
+.card-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
     font-size: 3em;
-    color: #007bff;
+    color: #000;
     margin-bottom: 15px;
 }
 
-/* Информационный блок */
-.information {
-    padding: 80px 0;
-    background: #007bff;
-    color: #fff;
+.card-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.info-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.info-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.info-text {
-    flex: 1;
-    margin-left: 40px;
-}
-
-.info-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.info-text p {
+.card-item p {
     font-size: 1.2em;
     line-height: 1.5;
-    margin-bottom: 20px;
 }
 
-.tertiary-btn {
-    background: #ffc107;
-    color: #007bff;
+/* Этапы */
+.steps {
+    padding: 80px 0;
+    background: #fff;
+    color: #000;
 }
 
-.tertiary-btn:hover {
-    background: #e0a800;
-    color: #fff;
+.step-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step-item {
+    flex: 1 1 calc(33% - 40px);
+    margin: 20px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.step-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-item h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.step-item p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 /* Форма */
 .request {
     padding: 80px 0;
-    background: #f4f4f4;
+    background: #fff;
 }
 
 form {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -234,28 +231,28 @@ form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333;
+    color: #000;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #e0e0e0;
     border-radius: 4px;
     font-size: 1em;
-    color: #333;
+    color: #000;
     background: #f9f9f9;
     transition: border-color 0.3s ease;
 }
 
 form input:focus, form textarea:focus {
-    border-color: #007bff;
+    border-color: #000;
     background: #fff;
 }
 
 form button {
-    background: #28a745;
+    background: #000;
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -266,13 +263,13 @@ form button {
 }
 
 form button:hover {
-    background: #218838;
+    background: #333;
 }
 
 /* Футер */
 footer {
-    background: #007bff;
-    color: #fff;
+    background: #fff;
+    color: #000;
     padding: 30px 0;
     text-align: center;
 }
@@ -283,7 +280,7 @@ footer p {
 }
 
 .social-media a {
-    color: #fff;
+    color: #000;
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.5em;
@@ -291,5 +288,128 @@ footer p {
 }
 
 .social-media a:hover {
-    color: #ffc107;
+    color: #666;
+}
+.info-image img{
+    width: 90svw;
+    max-width: 500px;
+}
+.info-image {
+    display: flex;
+    justify-content: center;
+}
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 1.6em;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    .btn {
+        font-size: 1.1em;
+    }
+
+    .card-item, .step-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.4em;
+    }
+
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .contact {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contact-link {
+        display: block;
+        margin-top: 10px;
+    }
+    .hero{
+        margin-top: 170px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+
+    .card-item, .step-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9em;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+    .hero{
+        margin-top: 170px;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .card-item, .step-item {
+        margin: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.8em;
+    }
+
+    form button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
 }
