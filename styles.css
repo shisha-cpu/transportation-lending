@@ -466,3 +466,50 @@ footer p {
         padding: 10px 20px;
     }
 }
+.service-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .service-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Accordion styles */
+.service-accordion .accordion-item {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.service-accordion .accordion-content {
+    display: none;
+    padding: 10px 0;
+}
+
+.accordion-item h3 {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.accordion-item h3:hover {
+    color: #007BFF;
+}
+
+/* Accordion JS */
+.accordion-item h3.active + .accordion-content {
+    display: block;
+}
