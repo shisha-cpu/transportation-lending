@@ -9,7 +9,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }); });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        // Рассчитываем позицию с учетом смещения на 200px выше
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 260;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
 
 
         const express = require('express');
